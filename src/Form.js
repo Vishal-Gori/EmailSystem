@@ -9,7 +9,7 @@ function Form() {
     name:'',
     email:'',
     phone:'',
-    gender:'Male',
+    gender:'',
     subject:'',
     message:''
   });
@@ -68,7 +68,7 @@ function Form() {
           <div className='form-inp'>
             <h3>Gender</h3>
             <div id='gender-div'>
-              <input type='radio' name='gender' checked onClick={(e)=>setUserData({
+              <input type='radio' name='gender' onClick={(e)=>setUserData({
                 ...userData,
                 gender:'Male'
               })} />&nbsp;Male&nbsp;&nbsp;
